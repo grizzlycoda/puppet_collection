@@ -20,9 +20,9 @@ The modules themselves are free to use as per license, you might need to adjust 
 # Overview
 
 * [**puppet_cd**](https://gitea.confdroid.com/confdroid/puppet_cd)
+  
     A Puppet module to configure a puppet environment:
     * Puppet master ready to work with Foreman as ENC (Foreman not installed by module)
     * Puppet agents
     * configures firewall ports, files and directories including selinux contexts.
     * Optionally: PuppetDB, r10k and a webhook listener
-
