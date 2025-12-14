@@ -94,7 +94,7 @@ pipeline {
              steps {
               sshagent(['edd05eb6-26b5-4c7b-a5cc-ea2ab899f4fa']) {
                 sh '''
-                  git remote add master git@github.com:grizzlycoda/puppet_collection.git
+                  git remote add origin git@github.com:grizzlycoda/puppet_collection.git
                   push master --mirror
                 '''
         }
