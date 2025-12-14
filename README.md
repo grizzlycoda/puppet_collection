@@ -45,9 +45,9 @@ Configures Prometheus, a Time Series Collection and Processing server
 ## [**confdroid_postgresql**](https://gitea.confdroid.com/confdroid/confdroid_postgresql)
 
 Automate installation, configuration and management of all aspects of PostgreSQL(standalone)
-    * installs and configures Postgres server and clients
-    * manage single line entries in pg_hba via define
-    * manage roles and databases via define (set `$pl_manage_content` to true)
-    * manage extensions (set `pl_manage_extensions` to true)
-    * install and manage pg_bouncer (set `pl_use_pg_bouncer` to true)
-    * enable SL / TLS manage TLS certificates (set `pl_ssl_enabled` to true and populate content externally through variables)
+  * installs and configures Postgres server and clients
+  * manage single line entries in pg_hba via define
+  * manage roles and databases via define (set `$pl_manage_content` to true)
+  * manage extensions (set `pl_manage_extensions` to true)
+  * install and manage pg_bouncer (set `pl_use_pg_bouncer` to true)
+  * enable SL / TLS manage TLS certificates (set `pl_ssl_enabled` to true and populate content externally through variables)
