@@ -17,10 +17,12 @@ All modules are specifically designed for  use with External Node Classifier (EN
 
 The modules themselves are free to use as per license, you might need to adjust to your own needs. Feedback and feature requests can be given at my [feedback portal](https://feedback.confdroid.com/).
 
+<a href="https://www.buymeacoffee.com/grizzly_coda"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=grizzly_coda&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+
 # Overview
 
 * [**puppet_cd**](https://gitea.confdroid.com/confdroid/puppet_cd)
-  
+
     A Puppet module to configure a puppet environment:
     * Puppet master ready to work with Foreman as ENC (Foreman not installed by module)
     * Puppet agents
