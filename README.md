@@ -6,6 +6,8 @@
 - [Readme](#readme)
 - [Summary](#summary)
 - [Overview](#overview)
+  - [**puppet\_cd**](#puppet_cd)
+  - [**confdroid\_prometheus**](#confdroid_prometheus)
 
 # Summary
 
@@ -23,7 +25,7 @@ The modules themselves are free to use as per license, you might need to adjust 
 
 # Overview
 
-* [**puppet_cd**](https://gitea.confdroid.com/confdroid/puppet_cd)
+## [**puppet_cd**](https://gitea.confdroid.com/confdroid/puppet_cd)
 
     A Puppet module to configure a puppet environment:
     * Puppet master ready to work with Foreman as ENC (Foreman not installed by module)
@@ -31,7 +33,7 @@ The modules themselves are free to use as per license, you might need to adjust 
     * configures firewall ports, files and directories including selinux contexts.
     * Optionally: PuppetDB, r10k and a webhook listener
 
-* [**confdroid_prometheus**](https://gitea.confdroid.com/confdroid/confdroid_prometheus)
+## [**confdroid_prometheus**](https://gitea.confdroid.com/confdroid/confdroid_prometheus)
 
     Configures Prometheus, a Time Series Collection and Processing server
   * installs and configures Prometheus
