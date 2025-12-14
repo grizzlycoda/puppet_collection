@@ -8,6 +8,7 @@
 - [Overview](#overview)
   - [**puppet\_cd**](#puppet_cd)
   - [**confdroid\_prometheus**](#confdroid_prometheus)
+  - [**confdroid\_postgresql**](#confdroid_postgresql)
 
 # Summary
 
@@ -27,16 +28,26 @@ The modules themselves are free to use as per license, you might need to adjust 
 
 ## [**puppet_cd**](https://gitea.confdroid.com/confdroid/puppet_cd)
 
-    A Puppet module to configure a puppet environment:
-    * Puppet master ready to work with Foreman as ENC (Foreman not installed by module)
-    * Puppet agents
-    * configures firewall ports, files and directories including selinux contexts.
-    * Optionally: PuppetDB, r10k and a webhook listener
+A Puppet module to configure a puppet environment:
+  * Puppet master ready to work with Foreman as ENC (Foreman not installed by module)
+  * Puppet agents
+  * configures firewall ports, files and directories including selinux contexts.
+  * Optionally: PuppetDB, r10k and a webhook listener
 
 ## [**confdroid_prometheus**](https://gitea.confdroid.com/confdroid/confdroid_prometheus)
 
-    Configures Prometheus, a Time Series Collection and Processing server
+Configures Prometheus, a Time Series Collection and Processing server
   * installs and configures Prometheus
   * optionally the Node exporter
   * optionally adds remote writing to a Postgresql database via postgresql Adapter ( not part of this module)
   * Optionally allows pruning of the local TSDB
+
+## [**confdroid_postgresql**](https://gitea.confdroid.com/confdroid/confdroid_postgresql)
+
+Automate installation, configuration and management of all aspects of PostgreSQL(standalone)
+    * installs and configures Postgres server and clients
+    * manage single line entries in pg_hba via define
+    * manage roles and databases via define (set `$pl_manage_content` to true)
+    * manage extensions (set `pl_manage_extensions` to true)
+    * install and manage pg_bouncer (set `pl_use_pg_bouncer` to true)
+    * enable SL / TLS manage TLS certificates (set `pl_ssl_enabled` to true and populate content externally through variables)
