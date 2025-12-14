@@ -94,12 +94,6 @@ pipeline {
              steps {
               sshagent(['edd05eb6-26b5-4c7b-a5cc-ea2ab899f4fa']) {
                 sh '''
-                  git checkout master
-                  git pull origin master
-                  git branch -D development
-                  git branch -D jenkins-build-$BUILD_NUMBER
-                  git rm -f Jenkinsfile
-                  git commit --amend --no-edit --allow-empty
                   git remote add master git@github.com:grizzlycoda/puppet_collection.git
                   push master --mirror
                 '''
