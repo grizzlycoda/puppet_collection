@@ -17,7 +17,9 @@ All modules are specifically designed for  use with External Node Classifier (EN
 
 The modules themselves are free to use as per license, you might need to adjust to your own needs. Feedback and feature requests can be given at my [feedback portal](https://feedback.confdroid.com/).
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/grizzly_coda)
+
+                                [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/grizzly_coda)
+
 
 # Overview
 
