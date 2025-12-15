@@ -9,6 +9,7 @@
   - [**puppet\_cd**](#puppet_cd)
   - [**confdroid\_prometheus**](#confdroid_prometheus)
   - [**confdroid\_postgresql**](#confdroid_postgresql)
+- [FAQ](#faq)
 
 # Summary
 
@@ -32,7 +33,10 @@ A Puppet module to configure a puppet environment:
   * Puppet master ready to work with Foreman as ENC (Foreman not installed by module)
   * Puppet agents
   * configures firewall ports, files and directories including selinux contexts.
-  * Optionally: PuppetDB, r10k and a webhook listener
+  * Optionally:
+    * PuppetDB
+    * r10k deployment service
+    * webhook listener to trigger r10k
 
 ## [**confdroid_prometheus**](https://gitea.confdroid.com/confdroid/confdroid_prometheus)
 
@@ -51,3 +55,8 @@ Automate installation, configuration and management of all aspects of PostgreSQL
   * manage extensions (set `pl_manage_extensions` to true)
   * install and manage pg_bouncer (set `pl_use_pg_bouncer` to true)
   * enable SL / TLS manage TLS certificates (set `pl_ssl_enabled` to true and populate content externally through variables)
+
+
+# FAQ
+* Q: "Why are the names of the modules using underscore instead of hyphens?"
+  A: The modules are best deployed through the [R10k](https://github.com/puppetlabs/r10k) service using a Puppetfile. The deployment process using Puppetfile would convert the name of say "confdroid-postgresql" into a module called "confdroid" locally on the puppet server, cutting off everything after the hyphen. It also would then not deploy more than one module, because they all would be called "confdroid"
