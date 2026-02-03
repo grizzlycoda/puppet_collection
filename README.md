@@ -6,7 +6,7 @@
 - [Readme](#readme)
 - [Summary](#summary)
 - [Overview](#overview)
-  - [**puppet\_cd**](#puppet_cd)
+  - [**confdroid\_puppet**](#confdroid_puppet)
   - [**confdroid\_prometheus**](#confdroid_prometheus)
   - [**confdroid\_postgresql**](#confdroid_postgresql)
 - [FAQ](#faq)
@@ -27,7 +27,7 @@ The modules themselves are free to use as per license, you might need to adjust 
 
 # Overview
 
-## [**puppet_cd**](https://gitea.confdroid.com/confdroid/puppet_cd)
+## [**confdroid_puppet**](https://gitea.confdroid.com/confdroid/confdroid_puppet)
 
 A Puppet module to configure a puppet environment:
   * Puppet master ready to work with Foreman as ENC (Foreman not installed by module)

@@ -41,7 +41,7 @@ pipeline {
 
       stage('SonarScan') {
          steps {
-            withCredentials([string(credentialsId: 'sonar-token', variable: 'SONAR_TOKEN')]) {
+            withCredentials([string(credentialsId: 'sonar-token-12ww1160', variable: 'SONAR_TOKEN')]) {
               sh '''
               /opt/sonar-scanner/bin/sonar-scanner \
                 -Dsonar.projectKey=puppet_collection \
@@ -80,6 +80,7 @@ pipeline {
                         git branch -D development
                         git branch -D jenkins-build-$BUILD_NUMBER
                         git rm -f Jenkinsfile
+                        git rm -r --cached .vscode || echo "No .vscode to remove from git"
                         git commit --amend --no-edit --allow-empty
                         git remote add master https://gitea.confdroid.com/confdroid/puppet_collection.git
                         git -c credential.helper="!f() { echo username=${GITEA_USER}; echo password=${GITEA_TOKEN}; }; f" \
