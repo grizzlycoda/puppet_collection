@@ -7,8 +7,9 @@
   - [Summary](#summary)
   - [Overview](#overview)
     - [--confdroid\_puppet--](#--confdroid_puppet--)
-    - [--confdroid\_prometheus--](#--confdroid_prometheus--)
-    - [--confdroid\_postgresql--](#--confdroid_postgresql--)
+    - [confdroid\_prometheus](#confdroid_prometheus)
+    - [confdroid\_postgresql](#confdroid_postgresql)
+    - [confdroid\_apache](#confdroid_apache)
   - [FAQ](#faq)
 
 ## Summary
@@ -37,7 +38,7 @@ A Puppet module to configure a puppet environment:
   - r10k deployment service
   - webhook listener to trigger r10k
 
-### [--confdroid_prometheus--](https://gitea.confdroid.com/confdroid/confdroid_prometheus)
+### [confdroid_prometheus](https://gitea.confdroid.com/confdroid/confdroid_prometheus)
 
 Configures Prometheus, a Time Series Collection and Processing server
 
@@ -46,7 +47,7 @@ Configures Prometheus, a Time Series Collection and Processing server
 - optionally adds remote writing to a Postgresql database via postgresql Adapter ( not part of this module)
 - Optionally allows pruning of the local TSDB
 
-### [--confdroid_postgresql--](https://gitea.confdroid.com/confdroid/confdroid_postgresql)
+### [confdroid_postgresql](https://gitea.confdroid.com/confdroid/confdroid_postgresql)
 
 Automate installation, configuration and management of all aspects of PostgreSQL(standalone)
 
@@ -56,6 +57,15 @@ Automate installation, configuration and management of all aspects of PostgreSQL
 - manage extensions (set `pl_manage_extensions` to true)
 - install and manage pg_bouncer (set `pl_use_pg_bouncer` to true)
 - enable SL / TLS manage TLS certificates (set `pl_ssl_enabled` to true and populate content externally through variables)
+
+### [confdroid_apache](https://gitea.confdroid.com/confdroid/confdroid_apache)
+
+Install and configure a standalone empty Apache (httpd) server. The module is mainly to be used by other modules to add websites or services on top, i.e. Nagios, Wordpress etd. 
+
+- install the packages
+- manage main files and directories
+- ensure the service is up and running
+- open the firewall
 
 ## FAQ
 
