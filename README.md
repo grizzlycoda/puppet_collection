@@ -10,6 +10,7 @@
     - [confdroid\_prometheus](#confdroid_prometheus)
     - [confdroid\_postgresql](#confdroid_postgresql)
     - [confdroid\_apache](#confdroid_apache)
+    - [confdroid\_gitea](#confdroid_gitea)
   - [FAQ](#faq)
 
 ## Summary
@@ -66,6 +67,15 @@ Install and configure a standalone empty Apache (httpd) server. The module is ma
 - manage main files and directories
 - ensure the service is up and running
 - open the firewall
+
+### [confdroid_gitea](https://sourcecode.confdroid.com/confdroid/confdroid_gitea)
+
+Install and configure a gitea stanadlone instance from non-packaged binaries.
+
+- install binary
+- manage main files and directories 
+- manage service file and status
+- manage the firewall port
 
 ## FAQ
 
