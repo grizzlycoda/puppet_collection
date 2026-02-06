@@ -6,7 +6,7 @@
 - [Readme](#readme)
   - [Summary](#summary)
   - [Overview](#overview)
-    - [--confdroid\_puppet--](#--confdroid_puppet--)
+    - [confdroid\_puppet](#confdroid_puppet)
     - [confdroid\_prometheus](#confdroid_prometheus)
     - [confdroid\_postgresql](#confdroid_postgresql)
     - [confdroid\_apache](#confdroid_apache)
@@ -26,7 +26,7 @@ The modules themselves are free to use as per license, you might need to adjust 
 
 ## Overview
 
-### [--confdroid_puppet--](https://sourcecode.confdroid.com/confdroid/confdroid_puppet)
+### [confdroid_puppet](https://sourcecode.confdroid.com/confdroid/confdroid_puppet)
 
 A Puppet module to configure a puppet environment:
 
