@@ -82,7 +82,7 @@ pipeline {
                         git rm -f Jenkinsfile
                         git rm -r --cached .vscode || echo "No .vscode to remove from git"
                         git commit --amend --no-edit --allow-empty
-                        git remote add master https://gitea.confdroid.com/confdroid/puppet_collection.git
+                        git remote add master https://sourcecode.confdroid.com/confdroid/puppet_collection.git
                         git -c credential.helper="!f() { echo username=${GITEA_USER}; echo password=${GITEA_TOKEN}; }; f" \
                         push master --mirror
                     '''
