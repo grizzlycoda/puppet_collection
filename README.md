@@ -27,7 +27,7 @@ The modules themselves are free to use as per license, you might need to adjust 
 
 ## Overview
 
-### [confdroid_puppet](https://sourcecode.confdroid.com/confdroid/confdroid_puppet)
+### [confdroid_puppet](https://3for.me/fcjai)
 
 A Puppet module to configure a puppet environment:
 
@@ -39,7 +39,7 @@ A Puppet module to configure a puppet environment:
   - r10k deployment service
   - webhook listener to trigger r10k
 
-### [confdroid_prometheus](https://sourcecode.confdroid.com/confdroid/confdroid_prometheus)
+### [confdroid_prometheus](httpshttps://3for.me/vl9de)
 
 Configures Prometheus, a Time Series Collection and Processing server
 
@@ -48,7 +48,7 @@ Configures Prometheus, a Time Series Collection and Processing server
 - optionally adds remote writing to a Postgresql database via postgresql Adapter ( not part of this module)
 - Optionally allows pruning of the local TSDB
 
-### [confdroid_postgresql](https://sourcecode.confdroid.com/confdroid/confdroid_postgresql)
+### [confdroid_postgresql](https://3for.me/oja4z)
 
 Automate installation, configuration and management of all aspects of PostgreSQL(standalone)
 
@@ -59,7 +59,7 @@ Automate installation, configuration and management of all aspects of PostgreSQL
 - install and manage pg_bouncer (set `pl_use_pg_bouncer` to true)
 - enable SL / TLS manage TLS certificates (set `pl_ssl_enabled` to true and populate content externally through variables)
 
-### [confdroid_apache](https://sourcecode.confdroid.com/confdroid/confdroid_apache)
+### [confdroid_apache](https://3for.me/kdo6j)
 
 Install and configure a standalone empty Apache (httpd) server. The module is mainly to be used by other modules to add websites or services on top, i.e. Nagios, Wordpress etd. 
 
@@ -68,9 +68,9 @@ Install and configure a standalone empty Apache (httpd) server. The module is ma
 - ensure the service is up and running
 - open the firewall
 
-### [confdroid_gitea](https://sourcecode.confdroid.com/confdroid/confdroid_gitea)
+### [confdroid_gitea](https://3for.me/s0tka)
 
-Install and configure a gitea stanadlone instance from non-packaged binaries.
+Install and configure a gitea standalone instance from non-packaged binaries.
 
 - install binary
 - manage main files and directories 
