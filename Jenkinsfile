@@ -57,7 +57,7 @@ pipeline {
         steps {
           sshagent(['edd05eb6-26b5-4c7b-a5cc-ea2ab899f4fa']) {
             sh '''
-                 git config user.name "Jenkins Server"
+                git config user.name "Jenkins Server"
                 git config user.email jenkins@confdroid.com
                 git add -A && git commit -am "Recommit for updates in build $BUILD_NUMBER" || echo "No changes to commit"
                 git push origin HEAD:master
