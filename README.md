@@ -11,6 +11,7 @@
     - [confdroid\_postgresql](#confdroid_postgresql)
     - [confdroid\_apache](#confdroid_apache)
     - [confdroid\_gitea](#confdroid_gitea)
+    - [confdroid\_php](#confdroid_php)
   - [FAQ](#faq)
 
 ## Summary
@@ -76,6 +77,14 @@ Install and configure a gitea standalone instance from non-packaged binaries.
 - manage main files and directories 
 - manage service file and status
 - manage the firewall port
+
+### [confdroid_php](https://3for.me/b5doc)
+
+Install and configure PHP to allow multiple applications with different settings to run in parallel. Custom php.ini settings should be configured with the application in question.
+
+- install php
+- manage required directories including selinux contexts and permissions
+- manage reuired files including selinux contexts and permissions
 
 ## FAQ
 
