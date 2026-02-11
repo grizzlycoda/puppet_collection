@@ -13,6 +13,7 @@
     - [confdroid\_apache](#confdroid_apache)
     - [confdroid\_gitea](#confdroid_gitea)
     - [confdroid\_php](#confdroid_php)
+    - [confdroid\_nrpe](#confdroid_nrpe)
   - [FAQ](#faq)
 
 ## Summary
@@ -86,6 +87,21 @@ Install and configure PHP to allow multiple applications with different settings
 - install php
 - manage required directories including selinux contexts and permissions
 - manage reuired files including selinux contexts and permissions
+
+### [confdroid_nrpe](https://3for.me/77w07)
+
+Install NRPE as client for Nagios to query the status of hosts and their services. 
+
+- manage NRPE service user properties
+- manage directory structure (file system permissions, selinux context) through parameters
+- manage configuration files through parameters:
+  - nrpe.conf
+  - nrpe.cfg
+- manage sudo role for nagios user on NRPE clients
+- manage dynamic NRPE check command definitions
+- manage iptables (optional)
+- manage selinux rule exceptions (optional)
+- manage NRPE service
 
 ## FAQ
 
