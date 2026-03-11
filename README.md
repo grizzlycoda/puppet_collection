@@ -15,6 +15,7 @@
     - [confdroid\_php](#confdroid_php)
     - [confdroid\_nrpe](#confdroid_nrpe)
     - [confdroid\_nagios](#confdroid_nagios)
+    - [confdroid\_fail2ban](#confdroid_fail2ban)
     - [control repo template](#control-repo-template)
   - [FAQ](#faq)
 
@@ -116,6 +117,18 @@ Install, configure and fully populate Nagios via Exports in PuppetDB
 - manage service
 - export client targets (hosts, services)
 - import resources in nagios (hosts, services, commands, contacts etc.)
+
+### [confdroid_fail2ban](https://3for.me/fqqjy)
+
+Install, configure and manage fail2ban to protect hosts and services against brute force attacks.
+
+- manage directory structure  (file system permissions, selinux context)
+- manage configuration files   (file system permissions, selinux context, content based on parameters)
+  - fail2ban.conf
+  - fail2ban.local (overrides default settings in fail2ban.conf)
+  - jail.conf
+  - jail.local (overrides default settings in jail.conf)
+- manage service status
 
 ### [control repo template](https://3for.me/nq00s)
 
