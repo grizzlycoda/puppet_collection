@@ -23,6 +23,7 @@
     - [confdroid\_alloy](#confdroid_alloy)
     - [confdroid\_haproxy](#confdroid_haproxy)
     - [confdroid\_clamav](#confdroid_clamav)
+    - [confdroid\_ntp](#confdroid_ntp)
   - [FAQ](#faq)
 
 ## Summary
@@ -204,6 +205,17 @@ install, configure and manage clamav / clamd
 - run cron job to scan the file system (by default starting at root, configurable) via clamdscan
 - set ConcurrentDatabaseReload option `yes`/`no` to optimize RAM consumption. defaults to `no`
 - manage `freshclam` and `clamd` services
+
+### [confdroid_ntp](https://3for.me/nbrws)
+
+install, configure and manage chrony as ntp server or client
+
+- install all required binaries
+- manage required config files and directories
+- manage optional monitoring through nagios (service)
+- manage optional remote logging through alloy/loki
+- manage optional nts authentication client side
+- manage `chronyd` service
 
 ---
 
